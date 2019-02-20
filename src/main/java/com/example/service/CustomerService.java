@@ -12,10 +12,11 @@ public class CustomerService {
     @Autowired
     CustomerRepository customerRepository;
 
-    public Customer save(Customer customer){
+    public Customer save(Customer customer) {
         return customerRepository.save(customer);
     }
-    public List<Customer> finadAll(){
+
+    public List<Customer> finadAll() {
         return customerRepository.findAll();
     }
 
